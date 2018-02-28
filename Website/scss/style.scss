@@ -6,22 +6,31 @@
 /* 04 - GLOBAL SETTINGS */
 /* 05 - HEADER */
 /* 06 - FOOTER */
+
 /*--------------------------------------------------------*/
 /*--------------------------------------------------------*/
+
+
 /* 01 - GRID */
+
 .container {
   display: grid;
   grid-template-columns: 2fr auto;
   grid-template-rows: 200px 100px 400px;
-  grid-gap: 20px; }
+  grid-gap: 20px;
+}
+
 
 /* 03 - RESET STYLES */
+
+
+
 /* 04 - GLOBAL SETTINGS */
 *,
 *:before,
 *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
+
 
 /* 06 - FOOTER */
-
-/*# sourceMappingURL=style.css.map */
