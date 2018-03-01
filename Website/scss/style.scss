@@ -1,36 +1,82 @@
 /*--------------------------------------------------------*/
 /* TABLE OF CONTENTS: */
 /*--------------------------------------------------------*/
-/* 01 - GRID */
-/* 03 - RESET STYLES */
-/* 04 - GLOBAL SETTINGS */
-/* 05 - HEADER */
-/* 06 - FOOTER */
+/* 01 - GLOBAL SETTINGS */
+/* 02 - RESET STYLES */
+/* 03 - GRID */
+/* 04 - HEADER*/
+/* 05 - SIDEBAR */
+
 
 /*--------------------------------------------------------*/
 /*--------------------------------------------------------*/
-
-
-/* 01 - GRID */
-
-.container {
-  display: grid;
-  grid-template-columns: 2fr auto;
-  grid-template-rows: 200px 100px 400px;
-  grid-gap: 20px;
-}
-
-
-/* 03 - RESET STYLES */
-
-
-
-/* 04 - GLOBAL SETTINGS */
+/* 01 - GLOBAL SETTINGS */
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+  }
+
+/* 02 - RESET STYLES */
+
+html, body {
+
+  background-color: #F7F7F7;
+  }
+
+
+/* 03 - GRID */
+
+.wrapper{
+
+  display: grid;
+  grid-template-rows: 200px 200px auto;
+  grid-template-columns: auto;
 }
 
+.container {
+  display: grid;
 
-/* 06 - FOOTER */
+
+}
+.item {
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgba(0, 0, 0, 0.03);
+  border-radius: 3px;
+  font-size: 35px;
+  background-color: var(--yellow); /* best colour */
+}
+
+/*04 - HEADER*/
+
+/* 05 - SIDEBAR */
+.filtersbar{
+
+}
+
+// #A, #B {
+//     position: absolute;
+// }
+// #A {
+//     top: 0px;
+//     width: 200px;
+//     bottom: 0px;
+//     background:orange;
+// }
+// #B {
+//     top: 0px;
+//     left: 200px;
+//     right: 0;
+//     bottom: 0px;
+//
+// }
+// #BB {
+//     top: 0px;
+//     left: 0px;
+//     right: 0;
+//     bottom: 0px;
+//
+// }
