@@ -82,7 +82,7 @@ a:hover {
 @media (max-width: 500px) {
   .wrapper {
     grid-template-columns: 1fr 2fr;
-    
+
     grid-template-areas:
       "header  header"
       "filter-bar filter-bar"
@@ -137,7 +137,6 @@ h5{
   background-color: #FCB284;
   padding: 20px;
   display: inline-block;
-  position: absolute;
   width: 100%;
   border-bottom: 20px solid #3E8D50;
 }
