@@ -95,7 +95,8 @@ a:hover {
   background-color: #FCB284;
   padding: 20px;
   display: inline-block;
-  position: static;
+  position: sticky;
+  top: 0;
   width: 100%;
   border-bottom: 20px solid #3E8D50; }
 
@@ -121,11 +122,11 @@ a:hover {
 .side {
   background-color: #E0DAD6;
   height: 100%;
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: 100px; }
 
 .filter-bar {
-  background-color: #F0EFEF;
-  position: static; }
+  background-color: #F0EFEF; }
 
 .filter-gear {
   display: inline-block;
@@ -145,7 +146,7 @@ a:hover {
   text-align: right; }
 
 .filter-item {
-  width: 250px;
+  width: 275px;
   text-align: left;
   background-color: #FCB284;
   margin: 0px;
@@ -171,7 +172,8 @@ a:hover {
   margin: 40px;
   padding: 40px;
   border: 5px;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  align-self: center; }
 
 /* 07-SEARCH BAR*/
 .search {
@@ -186,6 +188,9 @@ a:hover {
   bottom: 2px; }
 
 /* 08-FORMS*/
+form {
+  display: none; }
+
 b {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #5A5B5C;
@@ -249,5 +254,11 @@ input[type="radio"] {
   margin: 10px 0px 10px 20px;
   font-size: 12px;
   color: #5A5B5C; }
+
+.gened-box {
+  background-color: #CCCACA;
+  display: inline-block;
+  margin: 20px;
+  padding: 10px; }
 
 /*# sourceMappingURL=style.css.map */
