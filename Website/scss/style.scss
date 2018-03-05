@@ -28,9 +28,9 @@ html, body {
 /* 03 - GRID */
 
 .wrapper {
-        max-width: 1024px;
+        //max-width: 1024px;
         //margin: 0 auto;
-        //font: 1.2em Helvetica, arial, sans-serif;
+        font: 1.2em Helvetica, arial, sans-serif;
     }
 
 .main-head {
@@ -66,9 +66,29 @@ html, body {
 @media (max-width: 500px) {
   .wrapper {
     grid-template-columns: 1fr 2fr;
+    //grid-template-rows: 1fr 0fr 3fr 1fr;
     grid-template-areas:
       "header  header"
       "filter-bar filter-bar"
+      "sidebar content"
+      "sidebar content"
+      "sidebar content"
+      "sidebar content"
+      "search  search";
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/*Tablet*/
+@media (min-width: 501px) {
+  .wrapper {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "header  header"
+      "filter-bar filter-bar"
+      "sidebar content"
       "sidebar content"
       "sidebar content"
       "search   search";
@@ -78,14 +98,17 @@ html, body {
     justify-content: space-between;
   }
 }
+/*Desktop*/
 @media (min-width: 700px) {
   .wrapper {
     grid-template-columns: 1fr 4fr 1fr;
+
     grid-template-areas:
       "header header  header"
-      "filter-bar     filter-bar    filter-bar"
-      "sidebar   content"
-      "sidebar   content"
+      "filter-bar filter-bar filter-bar"
+      "sidebar   content content"
+      "sidebar   content content"
+      "sidebar   content content"
       "search search search"
    }
    nav ul {
@@ -118,25 +141,33 @@ html, body {
   display:inline-block;
   text-align: center;
   font-size: 12px;
+  margin: 10px;
 }
 
 /* 05 - SIDEBAR */
 
 .side{
   background-color: #E0DAD6;
-
 }
 
 .filter-bar{
   background-color: #F0EFEF;
 }
-.filter-align{
+.filter-gear{
   display: inline-block;
   float:right;
-  margin: 10px;
+  margin: 20px 20px auto 20px;
+  height: 22px;
+  width: 22px;
+}
+.filter-gear-modal{
+  display: inline-block;
+  float: left;
+  margin: 20px 20px auto 20px;
+  height: 22px;
+  width: 22px;
 }
 .filter-p{
-  position:relative;
   text-align: right;
 }
 .filter-item{
@@ -144,41 +175,25 @@ html, body {
   text-align: left;
   background-color: #FCB284;
   margin: 5px 5px;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
 
 }
-// .show-hide-filter{
-//
-// }
 
-// #A, #B {
-//     position: absolute;
-// }
-// #A {
-//     top: 0px;
-//     width: 200px;
-//     bottom: 0px;
-//     background:orange;
-// }
-// #B {
-//     top: 0px;
-//     left: 200px;
-//     right: 0;
-//     bottom: 0px;
-//
-// }
-// #BB {
-//     top: 0px;
-//     left: 0px;
-//     right: 0;
-//     bottom: 0px;
-//
-// }
+
 
 /* 06-CONTENT STYLES*/
 
 .content{
   background-color: #F7F7F7;
+}
+.modal{
+  display: block;
+  position: relative;
+  border: 5px;
+  background-color: #FFFFFF;
+  height: 200px;
+
+
 }
 
 /* 07-SEARCH BAR*/

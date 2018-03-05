@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
       <title> Canelink Redesign | Morgan & Lena </title>
     <link href="css/style.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
   </head>
 
   <body>
@@ -23,14 +26,25 @@
 
 <!--Filter Bar-->
 
-    <div class="filter-bar">  <img class="filter-align" src="images/1241-200.png" style="height: 22px; width: 22px;" alt="gear icon" >
+    <div class="filter-bar">  <img class="filter-gear" src="images/1241-200.png" alt="gear icon" >
 <h4 class="filter-p"> FILTERS </h4>
      </div>
      <!--Filter Bar-->
 
         <!--Main Screen-->
-        <section class="content"><h1>Main article area</h1>
-        <p>We go here from the filters.</p></section>
+        <section class="content">
+        <div class="modal">
+            <p> <img class="filter-gear-modal" src="images/1241-200.png" alt="gear icon" >
+              To view courses within a particular field of study, select from the filter
+                menu and press “Search”.
+            </p>
+              <p>
+              Courses can be filtered based upon any of the available criteria.
+              </p>
+        </div>
+
+
+        </section>
           <!--Main Screen-->
           <!--Sidebar Filter-->
 
@@ -39,7 +53,7 @@
                 <div class="filter-item">Filters</div>
                     <div class="filter-item">Course Filters</div>
                         <div class="filter-item">Class Meeting</div>
-                            <divc class="filter-item">Course Properties</div>
+                            <div class="filter-item">Course Properties</div>
 
 
           </aside>
