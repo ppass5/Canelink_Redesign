@@ -8,6 +8,7 @@
 /* 05 - SIDEBAR STYLES */
 /* 06 - CONTENT STYLES */
 /* 07 - SEARCH */
+/* 08- JS IDs */
 /*--------------------------------------------------------*/
 /*--------------------------------------------------------*/
 /* 01 - GLOBAL SETTINGS */
@@ -18,20 +19,32 @@
 html, body {
   background-color: #F7F7F7; }
 
+h5 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 0; }
+
+a:link {
+  text-decoration: none; }
+
+a:hover {
+  background-color: lightblue; }
+
 /* 03 - GRID */
 .wrapper {
-  font: 1.2em Helvetica, arial, sans-serif; }
+  font: 1.2em "Helvetica Neue", arial, sans-serif; }
 
 .main-head {
   grid-area: header; }
 
-.content {
+#content {
   grid-area: content; }
 
 .filter-bar {
   grid-area: filter-bar; }
 
-.side {
+#side {
   grid-area: sidebar; }
 
 .search {
@@ -72,7 +85,8 @@ html, body {
   background-color: #FCB284;
   padding: 20px;
   display: inline-block;
-  width: 100%; }
+  width: 100%;
+  border-bottom: 20px solid #3E8D50; }
 
 .logo {
   display: inline; }
@@ -81,13 +95,15 @@ html, body {
   display: inline;
   float: right;
   background-color: white;
-  border-radius: 5px; }
+  border-radius: 20px; }
 
-.p-header {
+.name-header {
   display: inline-block;
-  text-align: center;
-  font-size: 12px;
-  margin: 10px; }
+  text-align: right;
+  float: right;
+  height: 15px;
+  margin-top: 10px;
+  margin-right: 10px; }
 
 /* 05 - SIDEBAR */
 .side {
@@ -99,7 +115,7 @@ html, body {
 .filter-gear {
   display: inline-block;
   float: right;
-  margin: 20px 20px auto 20px;
+  margin: 25px 20px auto 20px;
   height: 22px;
   width: 22px; }
 

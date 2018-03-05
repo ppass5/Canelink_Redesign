@@ -1,7 +1,14 @@
 
 $('.filter-toggle').on('click', function(){
-    $('#sidebar').toggle('slide', { direction: 'left' }, 1000);
-    $('#content').animate({
-        'margin-left' : $('#main-content').css('margin-left') == '0px' ? '210px' : '0px'
-    }, 1000);
+    if( $('#side').is(':visible') ) {
+        $('#side').animate({ 'width': '0px' }, 'slow', function(){
+            $('#sidebar').hide();
+        });
+        $('#content').animate({ 'margin-left': '0px' }, 'slow');
+    }
+    else {
+        $('#sidebar').show();
+        $('#sidebar').animate({ 'width': '210px' }, 'slow');
+        $('#content').animate({ 'margin-left': '210px' }, 'slow');
+    }
 });
