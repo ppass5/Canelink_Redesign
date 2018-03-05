@@ -222,7 +222,7 @@ h5{
   width: 250px;
   text-align: left;
   background-color: #FCB284;
-  // margin: 5px 5px;
+  margin: 0px;
   padding: 20px;
 
 }
@@ -273,9 +273,7 @@ h5{
 /* 08-FORMS*/
 
 form{
-  padding:10px;
-  display:none;
-
+ // display: none;
 }
 
 
@@ -283,11 +281,12 @@ form{
 
 b{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: lighter;
+  color: #5A5B5C;
   font-size: 10px;
   text-align: center;
   margin-bottom: 15px;
-    margin-top: 15px;
+  margin-left: 20px;
+  margin-top: 15px;
 
 }
 .coursefilters{
@@ -318,4 +317,36 @@ b{
   width: 40%;
   height: 25px;
   box-shadow: 2px;
+}
+.greydiv{
+  background-color: #B2AFAC;
+  margin:0px;
+  padding:10px;
+}
+
+/*not using font and font weight values for some reason*/
+.divheading{
+  color: #5A5B5C;
+  font-size: 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  //font-weight: medium;
+  margin: 0;
+}
+
+input[type="radio"]
+{
+  -webkit-appearance: checkbox;  /* Chrome, Safari, Opera */
+  -moz-appearance: checkbox;    /* Firefox */
+  -ms-appearance: checkbox;     /* not currently supported */
+  border-color: black;
+  float: right;
+  margin-right: 20px;
+
+}
+
+.radio-label{
+  margin: 10px 0px 10px 20px;
+  font-size: 12px;
+  color: #5A5B5C;
+
 }
