@@ -89,7 +89,13 @@ a:hover {
 @media (min-width: 700px) {
   .wrapper {
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas: "header header  header" "filter-bar filter-bar filter-bar" "sidebar  content content" "sidebar  content content" "sidebar  content content" "search search search"; } }
+    grid-template-areas: "header header  header" "sidebar content content" "sidebar  content content" "sidebar  content content" "sidebar  content content" "search search search"; }
+
+  .filter-bar {
+    display: none; }
+
+  .filter-gear {
+    display: none; } }
 /*04 - HEADER STYLES*/
 .main-head {
   background-color: #FCB284;
@@ -188,9 +194,6 @@ a:hover {
   bottom: 2px; }
 
 /* 08-FORMS*/
-form {
-  display: none; }
-
 b {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #5A5B5C;

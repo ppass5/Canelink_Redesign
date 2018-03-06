@@ -143,13 +143,18 @@ h5{
 
     grid-template-areas:
       "header header  header"
-      "filter-bar filter-bar filter-bar"
+      "sidebar content content"
       "sidebar  content content"
       "sidebar  content content"
       "sidebar  content content"
       "search search search"
    }
-
+.filter-bar{
+  display: none;
+}
+.filter-gear{
+  display: none;
+}
 
 
 
@@ -282,7 +287,7 @@ h5{
 /* 08-FORMS*/
 
 form{
- display: none;
+ // display: none;
 }
 
 b{
