@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2211.373 179 21.581 28.775">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fafcfd;
+      }
+    </style>
+  </defs>
+  <g id="Chevron_Selected" data-name="Chevron Selected" transform="translate(2211.373 179)">
+    <rect id="background" class="cls-1" width="16.443" height="28.775" transform="translate(2.569)"/>
+    <path id="Chevron" class="cls-2" d="M0,10.79,11.151,0,13.36,2.138,4.418,10.79l8.941,8.653-2.209,2.138Z" transform="translate(0 21.067) rotate(-90)"/>
+  </g>
+</svg>

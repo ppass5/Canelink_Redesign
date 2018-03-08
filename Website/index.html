@@ -1,51 +1,157 @@
-  <!DOCTYPE HTML>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-      <title> Canelink Redesign | Morgan & Lena </title>
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
+<!DOCTYPE HTML>
+<html lang="en">
 
-  <body>
-    <div class="wrapper">
-      <!--Header-->
+<head>
+  <meta charset="UTF-8" />
+    <title> Canelink Redesign | Morgan & Lena </title>
+      <link href="css/style.css" rel="stylesheet"/>
+      <script src="https://use.fontawesome.com/c95d774399.js"></script>
+        <script src="js/script.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!--Header-->
     <header class="main-head">
-<span class="logo">
-   <img src="images/Miami_Hurricanes_logo.png" alt="miami hurricanes logo"/>
-</span>
+          <span class="logo"> <img src="images/Miami_Hurricanes_logo.png" alt="miami hurricanes logo"/>
+          </span>
+          <span class="avatar"> <img src="images/profile-icon-9.png" alt="grey avatar icon"/>
+          </span>
+          <div class="name-header">
+                <h5>MORGAN MCKIE</h5>
+                  <h5>INTERACTIVE MEDIA, MFA</h5>
+                    <h5><a href="#"> ENROLLMENT CART</a> </h5>
+          </div>
+        </header>
 
+    <!--Filter Bar-->
 
-<span class="avatar">
-   <img src="images/profile-icon-9.png" alt="grey avatar icon"/>
-</span>
-     </header>
-      <!--Header-->
-
-<!--Filter Bar-->
-
-    <div class="filter-bar">  <img class="filter-align" src="images/1241-200.png" style="height: 22px; width: 22px;" alt="gear icon" >
-<h4 class="filter-p"> FILTERS </h4>
-     </div>
-     <!--Filter Bar-->
-
-        <!--Main Screen-->
-        <section class="content"><h1>Main article area</h1>
-        <p>We go here from the filters.</p></section>
-          <!--Main Screen-->
-          <!--Sidebar Filter-->
-
-          <aside class="side">
-
-                <div class="filter-item">Filters</div>
-                    <div class="filter-item">Course Filters</div>
-                        <div class="filter-item">Class Meeting</div>
-                            <divc class="filter-item">Course Properties</div>
-
-
-          </aside>
-
-          <button class="search"> <h3>SEARCH</h3> </button>
-        <!--SideBar Filter-->
+    <div class="filter-bar"> <img class="filter-gear" id="filter-gear" src="images/1241-200.png" alt="gear icon">
+      <h4 class="filter-p"> FILTERS </h4>
     </div>
-  </body>
-  </html>
+
+    <!--Content Area-->
+    <section class="content" id="content">
+      <div class="modal">
+          <img class="filter-gear-modal" src="images/1241-200.png" alt="gear icon">
+          <p>
+               To view courses within a particular field of study, select from the filter menu and press “Search”.
+          </p>
+          <p>
+              Courses can be filtered based upon any of the available criteria.
+          </p>
+      </div>
+    </section>
+
+    <!--Sidebar Filter-->
+
+    <aside class="side" id="SideBar">
+
+    <!--Filters Form-->
+        <div class="filter-item">Filters
+          <span class="selector" id="form1"> <img src="images/Chevron-Selected.svg" alt="chevron"/> </span>
+        </div>
+
+      <form id="form1">
+
+          <b>Semester</b><br> <input type="text" class="text-form1" name="Semester">
+            <br><br>
+              <b>Program </b><br><input type="text" class="text-form1" name="program">
+              <br><br>
+                  <b>Program Level </b><br><input type="text" class="text-form1" name="programlevel">
+                  <br><br>
+              <b>Department </b><br><input type="text" class="text-form1" name="department">
+          <br><br>
+
+      </form>
+      <!--Course Filters Form-->
+      <div class="filter-item">Course Filters
+        <span class="selector" id="selector-cf"> <img src="images/Chevron-Selected.svg" alt="chevron"/> </span>
+      </div>
+
+
+      <form id="form2">
+
+          <b class="coursefilters"> Course Number </b> <b class="coursefilters" style="padding-left: 25px"> Section </b>
+            <br> <input type="text" class="text-form2" name="Semester"> <input type="text" class="text-form3" name="program">
+          <br><br>
+            <b class="coursefilters">Course Title </b><br><input type="text" class="text-form1" name="programlevel">
+            <br><br>
+                <b class="coursefilters"> Credit Options </b> <b class="coursefilters" style="padding-left: 25px"> Credits</b>
+                  <br> <input type="text" class="text-form2" name="Semester"> <input type="text" class="text-form3" name="program">
+                <br><br>
+            <b class="coursefilters">Instructor</b><br><input type="text" class="text-form1" name="department">
+            <br><br>
+
+        </form>
+      <!--Class Meeting Form-->
+      <div class="filter-item">Class Meeting
+        <span class="selector" id="selector-cm"> <img src="images/Chevron-Selected.svg" alt="chevron"/> </span>
+      </div>
+
+
+        <form id="form3">
+          <div class="greydiv">
+            <p class="divheading"> DAYS </p>
+          </div>
+
+           <p class="radio-label"> Monday  <input type="radio" name="days" value="monday"></p>
+              <p class="radio-label"> Tuesday <input type="radio" name="days" value="tuesday"></p>
+                <p class="radio-label"> Wednesday <input type="radio" name="days" value="wednesday"></p>
+                  <p class="radio-label"> Thursday <input type="radio" name="days" value="thursday"></p>
+                <p class="radio-label"> Friday <input type="radio" name="days" value="friday"></p>
+              <p class="radio-label"> Saturday <input type="radio" name="days" value="saturday"></p>
+            <p class="radio-label"> Sunday <input type="radio" name="days" value="sunday"></p>
+
+            <div class="greydiv">
+              <p class="divheading"> MODES OF INSTRUCTION </p>
+            </div>
+
+            <p class="radio-label"> Hybrid <input type="radio" name="days" value="monday"></p>
+               <p class="radio-label"> Experiential <input type="radio" name="days" value="tuesday"></p>
+                 <p class="radio-label"> In-person <input type="radio" name="days" value="wednesday"></p>
+                   <p class="radio-label"> Field Study <input type="radio" name="days" value="thursday"></p>
+                 <p class="radio-label"> Online <input type="radio" name="days" value="friday"></p>
+
+
+
+        </form>
+
+        <!--COURSE PROPERTIES-->
+      <div class="filter-item">Course Properties
+        <span class="selector" id="selector-cp"><img src="images/Chevron-Selected.svg" alt="chevron"/> </span>
+      </div>
+
+
+          <form id="form3">
+
+            <p class="radio-label"> General Education </p>
+                <div class="gened-box">
+                  <p class="radio-label"> Biological Sciences <input type="radio" name="gened" value="biological"></p>
+                     <p class="radio-label"> Composition <input type="radio" name="gened" value="composition"></p>
+                       <p class="radio-label"> Humanities <input type="radio" name="gened" value="humanities"></p>
+                         <p class="radio-label"> International <input type="radio" name="gened" value="international"></p>
+                       <p class="radio-label"> Mathematics <input type="radio" name="gened" value="mathematics"></p>
+                    <p class="radio-label"> Physical Sciences <input type="radio" name="gened" value="physicalscience"></p>
+                </div>
+
+
+                <p class="radio-label"> Writing Requirement <input type="radio" name="days" value="Writing Requirement"></p>
+                   <p class="radio-label"> Employee Education <input type="radio" name="days" value="tuesday"></p>
+
+            </form>
+
+
+
+    </aside>
+  <!--SideBar Filter-->
+
+  <!--SEARCH-->
+    <button class="search"> <h3>SEARCH</h3> </button>
+
+  </div>
+    <!--Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>
