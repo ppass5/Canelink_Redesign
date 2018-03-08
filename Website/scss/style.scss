@@ -103,7 +103,7 @@ h5{
     display: inline-block;
     background-color: white;
     border-radius: 20px;
-    margin-right: 170px;
+    margin-right: 80px;
 
   }
 
@@ -232,7 +232,7 @@ h5{
   width: 275px;
   text-align: left;
   background-color: #FCB284;
-  margin: 0px;
+  margin: 5px;
   padding: 20px;
 
 }
@@ -247,6 +247,12 @@ h5{
   width: 20px;
   margin-left: 60px;
 }
+.selector4{
+  display: inline-block;
+  float: right;
+  width: 20px;
+  margin-left: 40px;
+}
 
 
 
@@ -255,7 +261,6 @@ h5{
 .content{
   background-color: #F7F7F7;
   display: fixed;
-
 
 }
 .modal{
