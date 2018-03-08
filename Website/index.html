@@ -44,6 +44,7 @@
       <div class="modal-search" style="display:inline-block; margin:40px; padding: 40px; border: 5px; align-self: center;">
           <div class="search-content" style="width: 500px; height:62px; text-align: left; background-color:#FCB284; padding:20px;"> Spring 2018
           </div>
+
       </div>
     </section>
 
@@ -159,6 +160,9 @@
     <!--Script-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+    /*!$(document).ready(function(){
+      $("form").hide();
+    });*/
     $(document).ready(function(){
         $("form1Button").click(function(){
             $("form1").toggle();
@@ -180,14 +184,14 @@
         });
     });
     $(document).ready(function(){
-      $("#filter-gear").click(function(){
+      $(".filter-gear").click(function(){
         $(".side").toggle();
       });
     });
     $(document).ready(function(){
       $(".search").click(function(){
-        $(".modal").hide();
-        $(".modal-search").show();
+        $(".modal").toggle();
+        $(".modal-search").toggle();
       });
     });
     $(document).ready(function() {
