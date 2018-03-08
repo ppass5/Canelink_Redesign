@@ -79,7 +79,7 @@ a:hover {
     "search";
 }
 /*Mobile*/
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .wrapper {
     grid-template-columns: 1fr 2fr;
 
@@ -103,7 +103,7 @@ h5{
     display: inline-block;
     background-color: white;
     border-radius: 20px;
-    margin-right: 170px;
+    margin-right: 80px;
 
   }
 
@@ -246,6 +246,12 @@ h5{
   float: right;
   width: 20px;
   margin-left: 60px;
+}
+.selector4{
+  display: inline-block;
+  float: right;
+  width: 20px;
+  margin-left: 40px;
 }
 
 

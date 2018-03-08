@@ -70,7 +70,7 @@ a:hover {
     display: inline-block;
     background-color: white;
     border-radius: 20px;
-    margin-right: 170px; }
+    margin-right: 80px; }
 
   .name-header {
     display: inline-block;
@@ -168,12 +168,26 @@ a:hover {
   width: 20px;
   margin-left: 60px; }
 
+.selector4 {
+  display: inline-block;
+  float: right;
+  width: 20px;
+  margin-left: 40px; }
+
 /* 06-CONTENT STYLES*/
 .content {
   background-color: #F7F7F7;
   display: fixed; }
 
 .modal {
+  display: inline-block;
+  margin: 40px;
+  padding: 40px;
+  border: 5px;
+  background-color: #FFFFFF;
+  align-self: center; }
+
+.modal-search {
   display: inline-block;
   margin: 40px;
   padding: 40px;
