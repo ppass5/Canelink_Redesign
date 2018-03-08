@@ -6,7 +6,7 @@
     <title> Canelink Redesign | Morgan & Lena </title>
       <link href="css/style.css" rel="stylesheet"/>
       <script src="https://use.fontawesome.com/c95d774399.js"></script>
-        <script src="js/script.js"></script>
+      <script src="js/script.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -49,10 +49,10 @@
 
     <!--Filters Form-->
         <div class="filter-item">Filters
-          <span class="selector" id="form1"> <img src="images/Chevron-Selected.svg" alt="chevron"/> </span>
+          <span class="selector" id="form1"> <form1Button><img src="images/Chevron-Selected.svg" alt="chevron"/></form1Button> </span>
         </div>
 
-      <form id="form1">
+      <form1><form id="form1">
 
           <b>Semester</b><br> <input type="text" class="text-form1" name="Semester">
             <br><br>
@@ -63,14 +63,14 @@
               <b>Department </b><br><input type="text" class="text-form1" name="department">
           <br><br>
 
-      </form>
+      </form></form1>
       <!--Course Filters Form-->
       <div class="filter-item">Course Filters
-        <span class="selector" id="selector-cf"> <img src="images/Chevron-Selected.svg" alt="chevron"/> </span>
+        <span class="selector" id="selector-cf" > <form2Button> <img src="images/Chevron-Selected.svg" alt="chevron"/></form2Button> </span>
       </div>
 
 
-      <form id="form2">
+      <form2><form id="form2">
 
           <b class="coursefilters"> Course Number </b> <b class="coursefilters" style="padding-left: 25px"> Section </b>
             <br> <input type="text" class="text-form2" name="Semester"> <input type="text" class="text-form3" name="program">
@@ -83,14 +83,14 @@
             <b class="coursefilters">Instructor</b><br><input type="text" class="text-form1" name="department">
             <br><br>
 
-        </form>
+        </form></form2>
       <!--Class Meeting Form-->
       <div class="filter-item">Class Meeting
-        <span class="selector" id="selector-cm"> <img src="images/Chevron-Selected.svg" alt="chevron"/> </span>
+        <span class="selector" id="selector-cm"> <form3Button><img src="images/Chevron-Selected.svg" alt="chevron"/></form3Button> </span>
       </div>
 
 
-        <form id="form3">
+        <form3><form id="form3">
           <div class="greydiv">
             <p class="divheading"> DAYS </p>
           </div>
@@ -115,15 +115,15 @@
 
 
 
-        </form>
+        </form></form3>
 
         <!--COURSE PROPERTIES-->
       <div class="filter-item">Course Properties
-        <span class="selector" id="selector-cp"><img src="images/Chevron-Selected.svg" alt="chevron"/> </span>
+        <span class="selector" id="selector-cp"> <form4Button> <img src="images/Chevron-Selected.svg" alt="chevron"/></form4Button> </span>
       </div>
 
 
-          <form id="form3">
+          <form4><form id="form3">
 
             <p class="radio-label"> General Education </p>
                 <div class="gened-box">
@@ -139,7 +139,7 @@
                 <p class="radio-label"> Writing Requirement <input type="radio" name="days" value="Writing Requirement"></p>
                    <p class="radio-label"> Employee Education <input type="radio" name="days" value="tuesday"></p>
 
-            </form>
+            </form><form4>
 
 
 
@@ -151,7 +151,29 @@
 
   </div>
     <!--Script-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("form1Button").click(function(){
+            $("form1").toggle();
+        });
+    });
+    $(document).ready(function(){
+        $("form2Button").click(function(){
+            $("form2").toggle();
+        });
+    });
+    $(document).ready(function(){
+        $("form3Button").click(function(){
+            $("form3").toggle();
+        });
+    });
+    $(document).ready(function(){
+        $("form4Button").click(function(){
+            $("form4").toggle();
+        });
+    });
+    </script>
 </body>
 
 </html>

@@ -16,8 +16,8 @@ $('.filter-toggle').on('click', function(){
 
 //JS TO SHOW/HIDE FORMS UNDER FILTERS, AS OF RIGHT NOW IT CALLS BACK TO A 'BUTTON' AND NOT THE ICON
 $(document).ready(function(){
-    $("#form1Button").click(function(){
-        $("#form1").toggle();
+    $("form1Button").click(function(){
+        $("form1").toggle();
     });
 });
 $(document).ready(function(){
