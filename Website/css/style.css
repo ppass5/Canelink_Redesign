@@ -55,7 +55,7 @@ a:hover {
   grid-template-areas: "header" "filter-bar" "content" "sidebar" "search"; }
 
 /*Mobile*/
-@media (max-width: 500px) {
+@media (max-width: 375px) {
   .wrapper {
     grid-template-columns: 1fr 2fr;
     grid-template-areas: "header  header" "filter-bar filter-bar" "sidebar content" "sidebar content" "sidebar content" "sidebar content" "search  search"; }

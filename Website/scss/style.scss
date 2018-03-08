@@ -79,7 +79,7 @@ a:hover {
     "search";
 }
 /*Mobile*/
-@media (max-width: 500px) {
+@media (max-width: 375px) {
   .wrapper {
     grid-template-columns: 1fr 2fr;
 
@@ -261,7 +261,6 @@ h5{
 .content{
   background-color: #F7F7F7;
   display: fixed;
-
 
 }
 .modal{
