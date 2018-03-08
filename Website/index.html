@@ -41,6 +41,12 @@
               Courses can be filtered based upon any of the available criteria.
           </p>
       </div>
+      <div class="modal-search">
+          <img class="filter-gear-modal" src="images/1241-200.png" alt="gear icon">
+          <p>
+            this a test
+          </p>
+      </div>
     </section>
 
     <!--Sidebar Filter-->
@@ -149,6 +155,8 @@
   <!--SEARCH-->
     <button class="search"> <h3>SEARCH</h3> </button>
 
+
+
   </div>
     <!--Script-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -181,7 +189,11 @@
     $(document).ready(function(){
       $(".search").click(function(){
         $(".modal").hide();
+        $(".modal-search").show();
       });
+    });
+    $(document).ready(function() {
+      $('.modal-search').hide();
     });
     </script>
 </body>
